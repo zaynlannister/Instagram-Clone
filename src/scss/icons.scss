@@ -1,0 +1,29 @@
+.icon {
+ &__main-page.active {
+  & svg {
+    fill: rgb(38, 38, 38);
+  }
+ }
+
+  &__messenger.active {
+    & svg path:first-child {
+      fill: rgb(38, 38, 38);
+    }
+
+    & svg path:last-child {
+      fill: #fff;
+    }
+  }
+
+  &__new-post.active {
+    & svg {
+      & path {
+        fill: rgb(38, 38, 38);
+      }
+
+      & line {
+        color: #fff;
+      }
+    }
+  }
+}
