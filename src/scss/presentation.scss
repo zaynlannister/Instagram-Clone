@@ -1,0 +1,30 @@
+.presentation {
+  padding-top: 100px;
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+
+
+  &-wrapper {
+    width: 470px;
+  }
+
+  &__stories {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 8px;
+    overflow-x: scroll;
+
+    &-img img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50px;
+    }
+
+    &-acc {
+      margin-right: 20px;
+    }
+  }
+}
