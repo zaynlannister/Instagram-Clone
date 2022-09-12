@@ -16,6 +16,7 @@
   }
 
   &-icon img {
+    user-select: none;
     width: 115px;
     height: 42px;
     object-fit: contain;
@@ -54,6 +55,7 @@
   }
 
   &__account {
+    user-select: none;
     cursor: pointer;
     margin-left: 20px;
 

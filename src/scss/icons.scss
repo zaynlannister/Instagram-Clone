@@ -1,6 +1,6 @@
 .icon {
  &__main-page.active {
-  & svg {
+  & svg path {
     fill: rgb(38, 38, 38);
   }
  }
@@ -23,6 +23,36 @@
 
       & line {
         color: #fff;
+      }
+    }
+  }
+
+  &__find-user.active {
+    .icon__find-user-1 {
+      color: #fff;
+    }
+
+    .icon__find-user-2 {
+      fill: #fff;
+    }
+
+    & svg {
+      fill: rgb(38, 38, 38);
+    }
+  }
+
+  &__like {
+    position: relative;
+
+    &_clicked {
+      display: none;
+      position: absolute;
+      left: 0;
+    }
+
+    &.active {
+      .icon__like_clicked {
+        display: inline-block;
       }
     }
   }
