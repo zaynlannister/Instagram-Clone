@@ -14,3 +14,22 @@ input {
   width: 800px;
   margin: 0 auto;
 }
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-weight: bold;
+  font-size: 12px;
+  color: #0095f6;
+}
+
+a {
+  color: rgb(199, 199, 199);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

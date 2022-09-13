@@ -3,6 +3,11 @@
 
 
   &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-section {
     width: 470px;
   }
 
@@ -27,6 +32,75 @@
       margin-right: 20px;
       color: rgb(85, 85, 85);
       font-size: 12px;
+    }
+  }
+
+  &-recommendation {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  &-rec__links a {
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 5px;
+
+    &::after {
+      content: '\00B7';
+      margin: 0 0.25em 0 0.25em;
+    }
+  }
+}
+
+.rec {
+  &__account {
+    padding: 12px 0;
+    font-weight: 500;
+    color: rgb(38, 38, 38);
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 56px;
+      height: 56px;
+      border-radius: 30px;
+      object-fit: cover;
+    }
+
+    &-name {
+      margin-left: 10px;
+    }
+
+    &-button {
+      margin-left: auto;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    color: rgb(142, 142, 142);
+    padding-bottom: 12px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+
+    &-image img {
+      width: 32px;
+      height: 32px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    &-name {
+      margin-left: 10px;
+      font-weight: 500;
+    }
+
+    &-subscribe {
+      margin-left: auto;
     }
   }
 }
