@@ -1,0 +1,87 @@
+.user-post {
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 8px 0;
+
+  &__details, &__actions, &__info, &__comments-quantity, &__date {
+    padding: 0 12px;
+  }
+
+  & svg {
+    cursor: pointer;
+  }
+
+  &__details {
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+
+    &-additionally {
+      margin-left: auto;
+    }
+
+    & div {
+      cursor: pointer;
+    }
+  }
+
+  &__acc-image img {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+  }
+
+  &__username {
+    margin-left: 10px;
+  }
+
+  &__content  {
+    width: 100%;
+    height: 470px;
+    background-color: #eee;
+
+    & img {
+      width: 100%;
+      height: 470px;
+      object-fit: cover;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    padding-top: 8px;
+    margin-bottom: 12px;
+
+    & div {
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+        margin-left: auto;
+      }
+
+      &:hover svg {
+        fill: #8e8e8e;
+        color: #8e8e8e;
+      }
+    }
+  }
+
+  &__description {
+    margin: 6px 0;
+  }
+
+  &__comments-quantity {
+    cursor: pointer;
+    color: rgb(142, 142, 142);
+    margin-bottom: 6px;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+  }
+}

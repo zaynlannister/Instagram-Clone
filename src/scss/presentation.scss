@@ -1,7 +1,5 @@
 .presentation {
   padding-top: 100px;
-  font-size: 12px;
-  color: rgb(85, 85, 85);
 
 
   &-wrapper {
@@ -15,6 +13,7 @@
     background-color: #fff;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 8px;
+    box-sizing: border-box;
     overflow-x: scroll;
 
     &-img img {
@@ -26,6 +25,8 @@
     &-acc {
       cursor: pointer;
       margin-right: 20px;
+      color: rgb(85, 85, 85);
+      font-size: 12px;
     }
   }
 }
