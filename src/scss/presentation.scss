@@ -21,10 +21,15 @@
     box-sizing: border-box;
     overflow-x: scroll;
 
+    &-name {
+      font-weight: 500;
+    }
+
     &-img img {
       width: 56px;
       height: 56px;
       border-radius: 50px;
+      object-fit: cover;
     }
 
     &-acc {
