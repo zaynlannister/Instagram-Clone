@@ -1,0 +1,11 @@
+.presentation__stories.swiper-wrapper {
+  width: 100vh;
+}
+
+.presentation__stories-acc.swiper-slide {
+  flex-shrink: unset;
+}
+
+html:root {
+  --swiper-navigation-size: 20px;
+}
