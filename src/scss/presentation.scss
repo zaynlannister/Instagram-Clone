@@ -50,6 +50,10 @@
     display: inline-block;
     margin-bottom: 5px;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     &::after {
       content: '\00B7';
       margin: 0 0.25em 0 0.25em;

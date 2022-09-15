@@ -13,6 +13,7 @@
     align-items: center;
     width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 
   &-icon img {
@@ -68,10 +69,22 @@
     margin-left: 20px;
 
     &-image {
-      width: 24px;
-      height: 24px;
+      box-sizing: border-box;
+      padding: 2px;
+      width: 27px;
+      height: 27px;
       object-fit: cover;
       border-radius: 20px;
+    }
+
+    &.active {
+      .account-menu {
+        visibility: visible;
+      }
+
+      .header__account-image {
+        border: 1px solid rgb(38,38,38);
+      }
     }
   }
 }

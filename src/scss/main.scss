@@ -13,6 +13,7 @@ input {
 .container {
   width: 800px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn {
@@ -28,8 +29,4 @@ input {
 a {
   color: rgb(199, 199, 199);
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
