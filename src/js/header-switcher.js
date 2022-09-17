@@ -16,3 +16,13 @@ function switcher(item) {
 
     accountImage.classList.remove('active')
 }
+
+window.addEventListener('click', (event) => {
+    removeAccountMenu(event)
+})
+
+function removeAccountMenu(event) {
+    if (event.target.className !== 'header__account-image') {
+        accountImage.classList.remove('active')
+    }
+}
