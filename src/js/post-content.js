@@ -54,11 +54,11 @@ class Post {
     }
 }
 
-const data = [];
+const postMaterials = [];
 
 function prepareData(responseFromServer) {
     responseFromServer.forEach(item => {
-        data.push(new Post(item))
+        postMaterials.push(new Post(item))
     })
 }
 
@@ -71,4 +71,5 @@ function renderData(element, data) {
 }
 
 prepareData(responseFromServer);
-renderData('.presentation-publications', data);
+
+renderData('.presentation-publications', postMaterials);
