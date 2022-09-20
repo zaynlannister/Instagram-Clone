@@ -20,7 +20,7 @@ class Post {
 
     getTemplate() {
         return `
-            <div class="user-post">
+            <div class="user-post" data-id="${this.id}">
               <div class="user-post__details">
                 <div class="user-post__acc-image"><img src="src/images/user__image.png"></div>
                 <div class="user-post__username">${this.username}</div>
@@ -62,4 +62,13 @@ function prepareData(responseFromServer) {
     })
 }
 
+function renderData(element, data) {
+    const container = document.querySelector(element)
+
+    data.forEach(item => {
+        container.innerHTML += item.getTemplate()
+    })
+}
+
 prepareData(responseFromServer);
+renderData('.presentation-publications', data);
