@@ -86,3 +86,17 @@
     color: rgb(142, 142, 142);
   }
 }
+
+.like-btn {
+  &.hide {
+    display: none;
+  }
+}
+
+.dislike-btn {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
