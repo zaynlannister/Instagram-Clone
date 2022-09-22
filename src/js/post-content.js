@@ -18,8 +18,8 @@ class Post {
         this.likes--
     }
 
-    comment(text) {
-        this.comments.push(text)
+    comment(text, username) {
+        this.comments.push(new Comment({text: text, username: username}))
     }
 
     getTemplate() {
