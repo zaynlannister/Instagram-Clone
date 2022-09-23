@@ -1,4 +1,5 @@
 import { responseFromServer } from "./server-response";
+import { Comment } from "./post-comments";
 
 class Post {
     constructor(props) {
@@ -18,8 +19,8 @@ class Post {
         this.likes--
     }
 
-    comment(text, username) {
-        this.comments.push(new Comment({text: text, username: username}))
+    comment(text) {
+        this.comments.push(new Comment({text}))
     }
 
     getTemplate() {
@@ -52,7 +53,7 @@ class Post {
                 <div class="user-post__likes-quantity likes-quantity-${this.id}"><b><span>${this.likes}</span> отметок "Нравится"</b></div>
                 <div class="user-post__description"><b><span>${this.username}</span></b> ${this.description}</div>
               </div>
-              <div data-id="${this.id}" class="user-post__comments-quantity comment-btn">Посмотреть все комментарии ${this.comments.length}</div>
+              <div data-id="${this.id}" class="user-post__comments-quantity comments-quantity-${this.id} comment-btn">Посмотреть все комментарии <span>0</span></div>
               <div class="user-post__date">20 часов назад</div>
             </div>
         `
@@ -77,7 +78,7 @@ function switchLikeSvg(id) {
 
 // Business Logic
 
-const postMaterials = [];
+export const postMaterials = [];
 
 function getPost(id, data) {
     const post = data.find(item => item.id === id);
