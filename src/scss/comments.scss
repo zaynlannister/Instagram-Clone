@@ -4,12 +4,17 @@
   z-index: 98;
   width: 20%;
   position: fixed;
-  right: 0;
+  right: -80%;
   top: 0;
   bottom: 0;
   background-color: #fff;
   padding: 80px 0 0;
   border-left: 1px solid rgb(219, 219, 219);
+  transition: 200ms ease;
+
+  &.active {
+    right: 0;
+  }
 
   &__user-details {
     border-bottom: 1px solid rgb(219, 219, 219);
